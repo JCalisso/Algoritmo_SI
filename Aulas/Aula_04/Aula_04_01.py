@@ -22,6 +22,7 @@ lista = declarada com valores iniciais entre parenteses ()
 
 list comprehension
 
+conversão de tupla
 
 
 """
@@ -30,8 +31,6 @@ list comprehension
 # lista = [1,2,3,4,5,6,5,('teste',2)]
 
 # print(tupla.count(1))
-
-
 # lista.append('teste 2')
 # print (lista)
 
@@ -42,10 +41,21 @@ list comprehension
 # if 2 in lista:
 #     print ('tá na lista')
 
-valor = int(input('insira um valor: '))
+# lista_de_tupla = list(tupla) # conversão de tupla
+
+# valor = int(input('insira um valor: '))
 # resultado = [ variavel_que_recebe for condicoes ] - estrutura basica de uma list comprehension 
 
 # resultado = [x * valor for x in range(1,11)]
-resultado = [x * valor for x in range(1,11) if x != 3] # é possível adicionar condições
+# primeiro item - valor que será recuperado
+# segundo item - valor que vai percorrer (for)
+# terceiro item - validação da condição 
+# primeiro percorre o valor, depois valida a condição, se não retorna para o valor que é recuperado
+# resultado = [x * valor for x in range(1,11) if x != 3] # é possível adicionar condições
  
-print (resultado)
+tupla = (1,2,1,3,4,5)
+print(tupla)
+
+lista_de_tupla = list(tupla)
+
+print (lista_de_tupla)
