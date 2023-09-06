@@ -21,4 +21,4 @@ while sn_continua == 'continuar':
         print(animals_list)
         break
     else:
-        continue
+        continue    
